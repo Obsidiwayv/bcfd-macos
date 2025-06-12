@@ -17,7 +17,7 @@ jobs:
         run: sudo xcode-select -switch /Applications/Xcode.app
 
       - name: Build
-        run: xcodebuild clean build -project BCFD.xcodeproj -scheme YourScheme -destination 'platform=OS X'
+        run: xcodebuild clean build -project BCFD.xcodeproj -scheme BCFD -destination 'platform=OS X'
 
       - name: Run tests
-        run: xcodebuild test -project BCFD.xcodeproj -scheme YourScheme -destination 'platform=OS X'
+        run: xcodebuild test -project BCFD.xcodeproj -scheme BCFD -destination 'platform=OS X'
