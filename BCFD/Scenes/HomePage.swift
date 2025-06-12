@@ -9,35 +9,46 @@ import SwiftUI
 
 struct HomePage: View {
     var currentBotState = BotState.offline
+    @State var tokenInput: String = "Token"
     
     var body: some View {
         VStack {
             ZStack {
-                RoundedRectangle(cornerRadius: 25)
+                RoundedRectangle(cornerRadius: 15)
                     .fill(.white)
-                    .shadow(radius: 10)
-                    .frame(width: 400, height: 500)
+                    .shadow(radius: 1)
+                    .frame(width: 300, height: 380)
                 VStack {
-                    Circle()
-                        .frame(width: 150, height: 150)
-                        .foregroundStyle(.linearGradient(colors: [.black, .gray], startPoint: .topLeading, endPoint: .bottomLeading))
-                        .padding([.bottom], 90)
+                    Text("Bot")
+                        .background(
+                            Circle()
+                                .frame(width: 110, height: 110)
+                                .foregroundStyle(.linearGradient(colors: [.black, .gray], startPoint: .topLeading, endPoint: .bottomLeading)))
+                        .font(.system(size: 30))
+                        .padding([.bottom], 60)
+                    
+                    TextField("TokenInput", text: $tokenInput)
+                        .padding()
+                        .frame(width: 240, height: 50)
+                        .textFieldStyle(.plain)
+                        .overlay(RoundedRectangle(cornerRadius: 10).stroke(.gray, lineWidth: 2))
+                        .foregroundColor(.gray)
+                    
                     Button(action: {
                         
                     }) {
                         Label("Login", systemImage: "power")
-                            .padding()
-                            .frame(width: 130, height: 140)
+                            .frame(width: 260, height: 50)
+                            .font(.system(size: 15))
                     }
-                    .buttonStyle(PlainButtonStyle())
-                    .buttonStyle(.borderedProminent)
+                    .buttonStyle(UIButtonStyle(bgColor: Color("backgroundPrimary")))
+                    
                     Button(action: {}) {
                         Label("Status", systemImage: "gear")
-                            .padding()
-                            .frame(width: 200, height: 90)
+                            .frame(width: 260, height: 50)
+                            .font(.system(size: 15))
                     }
-                    .buttonStyle(PlainButtonStyle())
-                    .controlSize(.large)
+                    .buttonStyle(UIButtonStyle(bgColor: Color("base"), fgColor: .black))
                 }
             }
         }

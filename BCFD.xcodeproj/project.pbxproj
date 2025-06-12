@@ -12,6 +12,7 @@
 		FC167F6F2DFA0EE000749CC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC167F6E2DFA0EE000749CC3 /* Assets.xcassets */; };
 		FC167F732DFA0EE000749CC3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC167F722DFA0EE000749CC3 /* Preview Assets.xcassets */; };
 		FC167F7B2DFA107500749CC3 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC167F7A2DFA107500749CC3 /* HomePage.swift */; };
+		FC167F7F2DFA9CA100749CC3 /* UIButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC167F7E2DFA9CA100749CC3 /* UIButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		FC167F702DFA0EE000749CC3 /* BCFD.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BCFD.entitlements; sourceTree = "<group>"; };
 		FC167F722DFA0EE000749CC3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FC167F7A2DFA107500749CC3 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		FC167F7E2DFA9CA100749CC3 /* UIButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		FC167F692DFA0EDD00749CC3 /* BCFD */ = {
 			isa = PBXGroup;
 			children = (
+				FC167F7D2DFA9C8200749CC3 /* Elements */,
 				FC167F792DFA104C00749CC3 /* Scenes */,
 				FC167F6A2DFA0EDD00749CC3 /* BCFDApp.swift */,
 				FC167F6C2DFA0EDD00749CC3 /* ContentView.swift */,
@@ -78,6 +81,14 @@
 				FC167F7A2DFA107500749CC3 /* HomePage.swift */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		FC167F7D2DFA9C8200749CC3 /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				FC167F7E2DFA9CA100749CC3 /* UIButtonStyle.swift */,
+			);
+			path = Elements;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +164,7 @@
 				FC167F6D2DFA0EDD00749CC3 /* ContentView.swift in Sources */,
 				FC167F7B2DFA107500749CC3 /* HomePage.swift in Sources */,
 				FC167F6B2DFA0EDD00749CC3 /* BCFDApp.swift in Sources */,
+				FC167F7F2DFA9CA100749CC3 /* UIButtonStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
