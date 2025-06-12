@@ -1,0 +1,23 @@
+name: MacOS CI Build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Select Xcode
+        run: sudo xcode-select -switch /Applications/Xcode.app
+
+      - name: Build
+        run: xcodebuild clean build -project YourProject.xcodeproj -scheme YourScheme -destination 'platform=OS X'
+
+      - name: Run tests
+        run: xcodebuild test -project YourProject.xcodeproj -scheme YourScheme -destination 'platform=OS X'
