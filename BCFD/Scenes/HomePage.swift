@@ -29,7 +29,7 @@ struct HomePage: View {
                             .padding()
                             .frame(width: 130, height: 140)
                     }
-                    .buttonStyle(PlainButton())
+                    .buttonStyle(PlainButtonStyle())
                     .buttonStyle(.borderedProminent)
                     Button(action: {}) {
                         Label("Status", systemImage: "gear")
